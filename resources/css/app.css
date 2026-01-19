@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS Variables */
+:root {
+    --accent: #ff2e6f;
+    --accent-2: #ff6f93;
+}
+
+/* Register custom btn & card using @apply safely */
+.btn-accent {
+    @apply bg-[#ff2e6f] text-white px-4 py-2 shadow-lg hover:bg-[#ff6f93] transition;
+}
+
+.card {
+    @apply bg-white rounded-lg shadow p-6;
+}
+
+/* Page base styling */
+body {
+    @apply m-0 bg-[#F5F6FA] font-[Poppins,sans-serif];
+}
+
+.wrapper {
+    @apply flex;
+}
+
+/* Sidebar / Navbar */
+.navbar {
+    @apply w-[260px] bg-[#1A2238] h-screen p-6 text-white;
+}
+
+.navbar h2 {
+    @apply text-[22px] font-semibold mb-8;
+}
+
+.navbar ul {
+    @apply list-none p-0;
+}
+
+.navbar ul li {
+    @apply my-4;
+}
+
+.navbar ul li a {
+    @apply text-white no-underline text-[15px] transition;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    @apply text-[#00C4B4];
+}
+
+/* Main content container */
+main {
+    @apply flex-1 p-10;
+}
