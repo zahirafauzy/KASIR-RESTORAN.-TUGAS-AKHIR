@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('content')
-<form action="{{ route('admin.pesanan.index') }}" method="GET">
+<form action="{{ route('pesanan.index') }}" method="GET">
     <table class="w-full bg-white rounded-lg shadow overflow-hidden mb-6">
         <tbody>
             <tr class="border-b">
@@ -37,7 +37,7 @@
 
                 <td style="width:200px">
                     <div class="flex flex-col items-center gap-2 mt-8">
-                        <a href="{{ route('admin.pesanan.index') }}"
+                        <a href="{{ route('pesanan.index') }}"
                             class="text-white bg-[#1A2238] hover:bg-[#ff6f93] px-6 py-2 rounded-full">
                             Reset Filter
                         </a>

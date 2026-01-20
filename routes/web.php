@@ -46,8 +46,7 @@ Route::middleware(['auth'])->group(function () {
         Route::post('/pesanan/{pesanan}/item', [PesananController::class, 'storeItem'])
             ->name('pesanan.item.store');
 
-        Route::get('/pesanan', [PesananController::class, 'index'])
-            ->name('admin.pesanan.index');
+        
 
 
     });
